@@ -3,19 +3,22 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    mode: 'development',
+    entry: {
+        index: './src/index.js'},
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         publicPath: '/'
     },
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            '@componets': path.resolve(__dirname, 'src/components'),
+            '@components': path.resolve(__dirname, 'src/components'),
             '@containers': path.resolve(__dirname, 'src/containers'),
             '@routes': path.resolve(__dirname, 'src/routes'),
             '@styles': path.resolve(__dirname, 'src/styles'),
+            '@images': path.resolve(__dirname, 'src/static/images'),
         }
     },
     module: {
@@ -34,16 +37,31 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
+                test: /\.(s*)css$/,
                 use: [
                   {
                     loader: MiniCssExtractPlugin.loader,
                   },
                   'css-loader',
+                  'sass-loader',
                 ]
-              }
-        ]
-    },
+              },
+              {
+
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'assets/[hash].[ext]',
+                        },
+                    },
+                ],
+            },
+
+            ]
+        },
+    
     plugins: [
         new HtmlWebPackPlugin({
             template: './public/index.html',

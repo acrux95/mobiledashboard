@@ -1,0 +1,17 @@
+* {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    overflow: hidden;
+}
+.appFrame {
+width: 400px;
+height: 95vh;
+border: 1px solid black;
+margin: 2.5vh 0;
+}
