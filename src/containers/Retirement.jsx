@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Balance from '@components/Balance';
+import Balance from '@components/Balance.jsx';
 import Graphic from '@components/Graphic';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 

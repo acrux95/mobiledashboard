@@ -2,11 +2,11 @@ import React from 'react';
 
 import '@styles/Dashboard.scss'
 
-import Balance from "@components/Balance";
-import Movement from "@components/Movement";
-import Payment from "@components/Payment";
-import Menu from "@components/Menu";
-import Navbar from "@components/Navbar"
+import Balance from '@components/Balance';
+import Movement from '@components/Movement';
+import Payment from '@components/Payment';
+import Menu from '@components/Menu';
+import Navbar from '@components/Navbar';
 import { makeStyles } from '@material-ui/core/styles';
 
 import car from "@images/car.png"
