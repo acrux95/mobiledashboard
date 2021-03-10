@@ -1,26 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Balance from "@components/Balance";
+import Balance from '@components/Balance';
+import Graphic from '@components/Graphic';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import '@styles/Retirement.scss';
-import Button from '@material-ui/core/Button';
-
 
 const Retirement = () => {
     return (
         <>
             <section className='titleRetirement'>
-
+                <Link to="/"><ArrowBackIcon /></Link>
                 <Link to="/">CANCELAR</Link>
             </section>
-            <h1>Disposición</h1>
-            <Balance accountBalanace="$1,499,970.00" />
+            <p className='dispTitle'>Disposición</p>
+            <Balance accountBalance="$1,499,970.00" title="Tienes disponible" className1="container2" className2="balance2"/>
             <p className="object">Auto</p>
             <p className="qty">$350,000.00</p>
-            <h2>Selecciona tu plazo</h2>
-            <button className='actionButton'><Link to="/">LO QUIERO</Link></button>
-            
+            <p className="time">Selecciona tu plazo</p>
+            <Graphic className='graph' />
         </>
     )
 }

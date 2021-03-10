@@ -1,0 +1,43 @@
+.movement {
+    width: 330px;
+    height: 40px;
+    font-size: 12px;
+    color: #333333;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "image name date"
+                            "image categorize quantity";
+    .name {
+        grid-area: name;
+        display: flex;
+        align-self: center;
+        font-weight: 700;
+    }
+    .categorize {
+        grid-area: categorize;
+        display: flex;
+        align-self: center;
+    }
+    .date {
+        grid-area: date;
+        display: flex;
+        justify-self: right;
+        align-self: center;
+    }
+    .quantity {
+        grid-area: quantity;
+        display: flex;
+        justify-self: right;
+        align-self: center;
+        font-weight: 700;
+    }
+    img {
+        grid-area: image;
+        width: 30px;
+        object-fit: cover;
+        display: flex;
+        align-self: center;
+    }
+}

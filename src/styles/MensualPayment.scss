@@ -1,0 +1,27 @@
+.mensualpayment{
+    width: 100px;
+    height: 100px;
+    color: #222b45;
+    .payTitle {
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .payQty {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    .payTime {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .payTasa, .percent {
+        font-size: 10px;
+        font-weight: 600;
+        color: #5acaee;
+        text-align: center;
+    }
+}

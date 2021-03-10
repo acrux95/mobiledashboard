@@ -13,8 +13,8 @@ import '@styles/Menu.scss'
 const Menu = () => {
 
     return(
-        <BottomNavigation >
-            <BottomNavigationAction label="Home" value="home" icon={<HomeOutlinedIcon />} />
+        <BottomNavigation className="menu">
+            <BottomNavigationAction label="Home" value="home" icon={<HomeOutlinedIcon style={{fill: "#5acaee"}}/>} />
             <BottomNavigationAction label="Retirement" value="retirement" icon={<MonetizationOnOutlinedIcon />} />
             <BottomNavigationAction label="Payment" value="payment" icon={<CreditCardOutlinedIcon />} />
             <BottomNavigationAction label="Favorites" value="favorites" icon={<StarBorderOutlinedIcon />} />

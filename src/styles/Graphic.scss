@@ -1,0 +1,65 @@
+.item {
+    position: absolute;
+    padding-left: 80px;
+    padding-top: -20px;
+    z-index: 0;
+}
+.mensualpayment {
+    text-align: center;
+    position: relative;
+    // line-height: 325px;
+    // width: 270px;
+    z-index: 8;
+    top: -150px;
+    float: center;
+    padding-left: 50px;
+    
+}
+.svg {
+   -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    }
+.circle_animation {
+  stroke-dasharray: 300; /* this value is the pixel circumference of the circle */
+  stroke-dashoffset: 300;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-width: 24px;
+  border-image-source: linear-gradient(306deg, #bb64c8 83%, #783183 14%);
+  border-image-slice: 1;
+}
+
+.graphData .circle_animation {
+    -webkit-animation: graphData 1s ease-out forwards;
+    animation: graphData 1s ease-out forwards;
+}
+
+@-webkit-keyframes graphData {
+  to {
+    stroke-dashoffset: 90;
+  }
+}
+
+@keyframes graphData {
+  to {
+    stroke-dashoffset: 90;
+  }
+}
+
+.actionButton {
+    position: relative;
+    z-index: 8;
+    top: -110px;
+    width: 300px;
+    height: 45px;
+    margin-left: -43px;
+    border-radius: 4px;
+    background-color: #5acaee;
+    border: none;
+    a{
+        font-size: 20px;
+        font-weight: 350;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

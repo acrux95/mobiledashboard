@@ -1,12 +1,14 @@
 import React from 'react'
 
-import '@styles/Dashboard.scss'
+import '@styles/Balance.scss'
 
-const Balance = ({ accountBalanace }) => {
+const Balance = ({ accountBalance, className1, className2, title }) => {
     return(
-        <div className='balance'>
-            <h2>SALDO DISPONIBLE</h2>
-            <h1>{accountBalanace}</h1>
+        <div className={className1}>
+        <div className={className2}>
+            <p className='h2balance'>{title}</p>
+            <p className='h1balance'>{accountBalance}</p>
+        </div>
         </div>
     );
 }
