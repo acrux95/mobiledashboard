@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import Layout from "@components/Layout";
+import Layout from "@containers/Layout";
 import Dashboard from '@containers/Dashboard';
 import Retirement from "@containers/Retirement";
 import NotFound from '@containers/NotFound';
