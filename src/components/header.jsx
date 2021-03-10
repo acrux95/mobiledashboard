@@ -3,7 +3,8 @@ import React from 'react'
 import SignalCellularAltOutlinedIcon from '@material-ui/icons/SignalCellularAltOutlined';
 import WifiOutlinedIcon from '@material-ui/icons/WifiOutlined';
 import BatteryStdSharpIcon from '@material-ui/icons/BatteryStdSharp';
-import Clock from 'react-live-clock';
+
+import Clock from '@react-live-clock';
 
 import '@styles/Header.scss'
 
