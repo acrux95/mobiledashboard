@@ -4,7 +4,7 @@ import SignalCellularAltOutlinedIcon from '@material-ui/icons/SignalCellularAltO
 import WifiOutlinedIcon from '@material-ui/icons/WifiOutlined';
 import BatteryStdSharpIcon from '@material-ui/icons/BatteryStdSharp';
 
-import Clock from '@react-live-clock';
+import Clock from 'react-live-clock';
 
 import '@styles/Header.scss'
 
